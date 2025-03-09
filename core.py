@@ -54,16 +54,14 @@ def start():
 
 
 # Zamanlama
-schedule.every().day.at("20:29").do(start)
-
-# schedule.every().day.at("12:00").do(start)
-# schedule.every().day.at("13:30").do(start)
-# schedule.every().day.at("15:00").do(start)
-# schedule.every().day.at("16:30").do(start)
-# schedule.every().day.at("18:00").do(start)
-# schedule.every().day.at("19:30").do(start)
-# schedule.every().day.at("21:00").do(start)
-# schedule.every().day.at("22:30").do(start)
+schedule.every().day.at("12:00").do(start)
+schedule.every().day.at("13:30").do(start)
+schedule.every().day.at("15:00").do(start)
+schedule.every().day.at("16:30").do(start)
+schedule.every().day.at("18:00").do(start)
+schedule.every().day.at("19:30").do(start)
+schedule.every().day.at("21:00").do(start)
+schedule.every().day.at("22:30").do(start)
 
 # # # Her gün eski haberleri temizle
 schedule.every().day.at("00:00").do(clean_old_news)
